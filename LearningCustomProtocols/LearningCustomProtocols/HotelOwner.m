@@ -17,22 +17,27 @@ static HotelOwner *sharedObj;
 @synthesize managerDelegates = _managerDelegates;
 
 +(HotelOwner *)singleBoss{
-	
+
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		sharedObj = [[super alloc] initPrivately];
+		
+			//here [super alloc] returns the object which is of type HotelOwner. This is 
+			sharedObj = [[super alloc] initPrivately];
+			//sharedObj = [[HotelOwner alloc] init];
 	});
+	
 	return sharedObj;
 }
 
--(void)setManagerDelegate:(id<HotelManager>)managerDelegate{
-	_managerDelegate = managerDelegate;
-	[sharedObj.managerDelegates addObject:managerDelegate];
-}
+//-(void)setManagerDelegate:(id<HotelManager>)managerDelegate{
+//	_managerDelegate = managerDelegate;
+//	[sharedObj.managerDelegates addObject:managerDelegate];
+//}
 
 -(instancetype)initPrivately{
 	self = [super init];
 	if (self){
+        //		self.managerDelegate = NULL;
 		self.managerDelegates = [[NSMutableArray alloc] init];
 	}
 	return self;
@@ -43,6 +48,16 @@ static HotelOwner *sharedObj;
 		[sharedObj.managerDelegates enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 			if ([obj respondsToSelector:(@selector(generateReport))]) {
 				[obj generateReport];
+			}
+		}];
+	}
+}
+
+-(void)getReportFor:(NSDate*)date{
+	if ([sharedObj.managerDelegates count] != 0) {
+		[sharedObj.managerDelegates enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+			if ([obj respondsToSelector:(@selector(generateReportFor:))]) {
+				[obj generateReportFor:date];
 			}
 		}];
 	}

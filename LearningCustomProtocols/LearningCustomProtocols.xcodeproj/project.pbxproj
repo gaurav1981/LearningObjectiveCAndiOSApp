@@ -10,6 +10,8 @@
 		B88717D61E5FE54E009E70C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88717D51E5FE54E009E70C3 /* main.m */; };
 		B88717DE1E5FE582009E70C3 /* HotelOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B88717DD1E5FE582009E70C3 /* HotelOwner.m */; };
 		B88717E21E5FE6C7009E70C3 /* GeneralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B88717E11E5FE6C7009E70C3 /* GeneralManager.m */; };
+		B8B0C6E61E6915B7006D18E9 /* HotelSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0C6E51E6915B7006D18E9 /* HotelSystem.m */; };
+		B8B0C6EB1E691EF1006D18E9 /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0C6EA1E691EF1006D18E9 /* Report.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,11 @@
 		B88717DF1E5FE5B2009E70C3 /* HotelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelManager.h; sourceTree = "<group>"; };
 		B88717E01E5FE6C7009E70C3 /* GeneralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralManager.h; sourceTree = "<group>"; };
 		B88717E11E5FE6C7009E70C3 /* GeneralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralManager.m; sourceTree = "<group>"; };
+		B8B0C6E41E6915B7006D18E9 /* HotelSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelSystem.h; sourceTree = "<group>"; };
+		B8B0C6E51E6915B7006D18E9 /* HotelSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelSystem.m; sourceTree = "<group>"; };
+		B8B0C6E91E691EF1006D18E9 /* Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Report.h; sourceTree = "<group>"; };
+		B8B0C6EA1E691EF1006D18E9 /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
+		B8B0C6EC1E691F57006D18E9 /* SystemConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +72,34 @@
 			isa = PBXGroup;
 			children = (
 				B88717D51E5FE54E009E70C3 /* main.m */,
-				B88717DF1E5FE5B2009E70C3 /* HotelManager.h */,
-				B88717E01E5FE6C7009E70C3 /* GeneralManager.h */,
-				B88717E11E5FE6C7009E70C3 /* GeneralManager.m */,
-				B88717DC1E5FE582009E70C3 /* HotelOwner.h */,
-				B88717DD1E5FE582009E70C3 /* HotelOwner.m */,
+				B8B0C6E71E691EA8006D18E9 /* Classes */,
+				B8B0C6E81E691ECF006D18E9 /* Protocols */,
 			);
 			path = LearningCustomProtocols;
+			sourceTree = "<group>";
+		};
+		B8B0C6E71E691EA8006D18E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0C6EC1E691F57006D18E9 /* SystemConstants.h */,
+				B88717DC1E5FE582009E70C3 /* HotelOwner.h */,
+				B88717DD1E5FE582009E70C3 /* HotelOwner.m */,
+				B8B0C6E41E6915B7006D18E9 /* HotelSystem.h */,
+				B8B0C6E51E6915B7006D18E9 /* HotelSystem.m */,
+				B88717E01E5FE6C7009E70C3 /* GeneralManager.h */,
+				B88717E11E5FE6C7009E70C3 /* GeneralManager.m */,
+				B8B0C6E91E691EF1006D18E9 /* Report.h */,
+				B8B0C6EA1E691EF1006D18E9 /* Report.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B8B0C6E81E691ECF006D18E9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B88717DF1E5FE5B2009E70C3 /* HotelManager.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88717E21E5FE6C7009E70C3 /* GeneralManager.m in Sources */,
+				B8B0C6E61E6915B7006D18E9 /* HotelSystem.m in Sources */,
 				B88717D61E5FE54E009E70C3 /* main.m in Sources */,
+				B8B0C6EB1E691EF1006D18E9 /* Report.m in Sources */,
 				B88717DE1E5FE582009E70C3 /* HotelOwner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +293,7 @@
 				B88717DB1E5FE54E009E70C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HotelManager.h"
+#import "HotelSystem.h"
 
 @interface HotelOwner : NSObject
-@property (nonatomic) _Nonnull id <HotelManager> managerDelegate;
+
+//property for accessing system
+@property (nonnull,strong) HotelSystem* system;
 
 +(nonnull HotelOwner*)singleBoss;
--(void)getReport;
 
--(nonnull instancetype)init UNAVAILABLE_ATTRIBUTE;
-+(nonnull instancetype)alloc UNAVAILABLE_ATTRIBUTE;
-+(nonnull instancetype)new UNAVAILABLE_ATTRIBUTE;
+}
+//ensuring pure singleton is created
+-(_Nonnull instancetype)init  __attribute((unavailable("init is unavailable;use +sharedInstance")));
++(_Nonnull instancetype)new   __attribute((unavailable("new is unavailable;use +sharedInstance")));
++(_Nonnull instancetype)alloc __attribute((unavailable("alloc is unavailable;use +sharedInstance")));
+
 @end

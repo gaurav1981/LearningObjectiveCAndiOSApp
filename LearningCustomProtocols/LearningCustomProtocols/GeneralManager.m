@@ -23,4 +23,17 @@
 	NSLog(@"Report Generated");
 }
 
+-(void)generateReportFor:(NSDate *)date{
+	NSLog(@"Report Generated for the date %@",date);
+	
+	NSDateFormatter *longStyle= [[NSDateFormatter alloc] init];
+	[longStyle setDateStyle:NSDateFormatterLongStyle];
+	NSString *dateString = [longStyle stringFromDate:date];
+	
+	NSLog(@"Report Generated for the date in long string %@",dateString);
+	[longStyle setDateStyle:NSDateFormatterFullStyle];
+	NSLog(@"Report Generated for the date in full string %@", [longStyle stringFromDate:date]);
+}
+
+
 @end
