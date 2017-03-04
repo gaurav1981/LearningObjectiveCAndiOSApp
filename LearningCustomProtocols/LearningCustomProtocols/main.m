@@ -14,10 +14,12 @@
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		HotelOwner *owner = [HotelOwner singleBoss];
-		GeneralManager *mgr = [[GeneralManager alloc] init];
+        GeneralManager *mgr = [[GeneralManager alloc] init];
+        
+        [owner showMeReport];
+        
 		
-		[owner getReport];
-	
+			
 	}
     return 0;
 }

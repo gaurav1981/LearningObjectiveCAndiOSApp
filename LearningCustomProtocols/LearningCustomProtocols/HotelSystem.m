@@ -11,6 +11,8 @@ static HotelSystem *singleInstance;
 
 @interface HotelSystem ()
 
+//strong instance to hotel owner
+@property (nonnull, strong)HotelOwner *owner;
 @property (nonnull, nonatomic, strong) NSMutableArray *_allManagerDelegates;
 
 @end
@@ -47,7 +49,7 @@ static HotelSystem *singleInstance;
     }
 }
 
--(void)getReport{
+-(void)generateReport{
     if ([singleInstance._allManagerDelegates count] != 0) {
         [singleInstance._allManagerDelegates enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj respondsToSelector:(@selector(generateReport))]) {
@@ -57,7 +59,7 @@ static HotelSystem *singleInstance;
     }
 }
 
--(void)getReportFor:(NSDate*)date{
+-(void)generateReportFor:(NSDate*)date{
     if ([singleInstance._allManagerDelegates count] != 0) {
         [singleInstance._allManagerDelegates enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj respondsToSelector:(@selector(generateReportFor:))]) {
@@ -65,6 +67,5 @@ static HotelSystem *singleInstance;
             }
         }];
     }
-
-
+}
 @end

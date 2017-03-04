@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HotelOwner.h"
+#import "HotelSystem.h"
 
 @interface GeneralManager : NSObject <HotelManager>
 
-@property (nonnull) HotelOwner *boss;
+@property (nonnull) HotelSystem *hotelSystem;
 
 @end

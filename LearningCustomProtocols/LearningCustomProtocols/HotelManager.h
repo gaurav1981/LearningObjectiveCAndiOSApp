@@ -14,5 +14,6 @@
 -(void)generateReport;
 
 @optional
+-(void)generateReportFor:(NSDate*)date;
 -(void)generateStatsAndSave;
 @end

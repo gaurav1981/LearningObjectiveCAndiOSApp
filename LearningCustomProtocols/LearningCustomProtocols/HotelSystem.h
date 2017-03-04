@@ -14,9 +14,6 @@
 //SYSTEM FOR ENTIRE HOTEL
 @interface HotelSystem : NSObject
 
-//strong instance to hotel owner
-@property (nonnull, strong)HotelOwner *owner;
-
 //single instance of the System reprsenting the hotel system
 +(HotelSystem* _Nonnull )sharedInstance;
 
