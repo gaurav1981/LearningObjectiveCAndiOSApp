@@ -17,18 +17,29 @@ static HotelOwner *sharedObj;
 
 +(HotelOwner *)singleBoss{
  
-	static dispatch_once_t onceToken;
+    static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		
-			//here [super alloc] returns the object which is of type HotelOwner.
-			sharedObj = [[super alloc] initPrivately];
+        //sharedObj = [HotelOwner alloc];
+        //here [super alloc] returns the object which is of type HotelOwner. this is the default behavior
+        sharedObj = [super alloc];
+        sharedObj = [sharedObj initPrivately];
+        
+        /*
+         HotelOwner *obj = [HotelOwner alloc]
+         */
 	});
 	return sharedObj;
 }
 
 -(instancetype)initPrivately{
-	self = [super init];
-	if (self){
+    //call the init method from the super class
+    self = [super init];
+    
+    //if self is actually not nill.
+    if (self){
+        
+        //storing the reference of Hotelsystem => strong reference
         _system = [HotelSystem sharedInstance];
 	}
 	return self;
@@ -40,6 +51,10 @@ static HotelOwner *sharedObj;
 
 -(void)showMeReportFor:(NSDate *)date{
     [_system generateReportFor:date];
+}
+
+-(void)dealloc{
+    _system = nil;
 }
 
 @end

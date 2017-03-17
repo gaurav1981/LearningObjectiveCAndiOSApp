@@ -18,11 +18,18 @@
 +(nonnull HotelOwner*)singleBoss;
 
 //ensuring pure singleton is created
--(_Nonnull instancetype)init  __attribute((unavailable("init is unavailable;use +sharedInstance")));
-+(_Nonnull instancetype)new   __attribute((unavailable("new is unavailable;use +sharedInstance")));
-+(_Nonnull instancetype)alloc __attribute((unavailable("alloc is unavailable;use +sharedInstance")));
+-(_Nonnull instancetype)init  __attribute((unavailable("kindly use +singleBoss")));
++(_Nonnull instancetype)new   __attribute((unavailable("kindly use +singleBoss")));
++(_Nonnull instancetype)alloc __attribute((unavailable("kindly use +singleBoss")));
++(_Nonnull instancetype)allocWithZone __attribute((unavailable("kindly use +singleBoss")));
 
 -(void)showMeReport;
 -(void)showMeReportFor:(NSDate* _Nonnull)date;
 
 @end
+/*
+ 
+ system is an object of type class HotelSystem. This represents the hotel management system
+ owner interacts with the system to get information about hotel.
+ 
+ */
