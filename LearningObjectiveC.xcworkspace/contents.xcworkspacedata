@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LearningBasicUIElements/LearningBasicUIElements.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LearningCustomProtocols/LearningCustomProtocols.xcodeproj">
    </FileRef>
    <FileRef
