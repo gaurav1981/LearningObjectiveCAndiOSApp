@@ -12,7 +12,7 @@
 @interface HotelOwner : NSObject
 
 //property for accessing system
-@property (nonnull,strong) HotelSystem* system;
+@property HotelSystem* _Nullable  system;
 
 //single owner implementation
 +(nonnull HotelOwner*)singleBoss;

@@ -24,7 +24,7 @@ static HotelSystem *singleInstance;
 -(instancetype)initPrivateInstance{
     self = [super init];
     if (self){
-        _owner = [HotelOwner singleBoss];
+        //_owner = [HotelOwner singleBoss];
         
         _managerDelegate = __DARWIN_NULL;
         __allManagerDelegates = [[NSMutableArray alloc] initWithCapacity:10];

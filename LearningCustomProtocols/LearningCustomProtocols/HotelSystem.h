@@ -25,6 +25,7 @@
 +(_Nonnull instancetype)new   __attribute((unavailable("use +sharedInstance")));
 +(_Nonnull instancetype)alloc __attribute((unavailable("use +sharedInstance")));
 +(_Nonnull instancetype)allocWithZone __attribute((unavailable("kindly use +sharedInstance")));
+
 //Methods used by the owner;
 -(void)generateReport;
 -(void)generateReportFor:(NSDate* _Nonnull)date;
