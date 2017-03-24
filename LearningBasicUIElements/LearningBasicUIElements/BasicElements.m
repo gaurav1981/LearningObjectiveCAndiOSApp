@@ -11,6 +11,10 @@
 @interface BasicElements ()
 @property (weak, nonatomic) IBOutlet UIButton *btnAdditionalVC;
 @property (weak, nonatomic) IBOutlet UILabel *counterLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stepperLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+
+
 @property (assign) int counter;
 @end
 
@@ -51,7 +55,11 @@
 - (IBAction)showAdditionalVC:(id)sender {
     _counter++;
     _counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
-    [self performSegueWithIdentifier:@"segueAddVC" sender:self];
+		//[self performSegueWithIdentifier:@"segueAddVC" sender:self];
+}
+- (IBAction)incrementBy2:(id)sender {
+	_stepperLabel.text = [NSString stringWithFormat:@"%f", [_stepper value]];
+	
 }
 
 
