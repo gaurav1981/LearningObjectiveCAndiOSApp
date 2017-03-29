@@ -61,15 +61,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zN-PC-R6C">
+                                <rect key="frame" x="163" y="209" width="51" height="31"/>
+                                <connections>
+                                    <action selector="flipState:" destination="BYZ-38-t0r" eventType="valueChanged" id="yjw-47-ENG"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-S9-RMh">
+                                <rect key="frame" x="16" y="286" width="343" height="29"/>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectionOfColors:" destination="BYZ-38-t0r" eventType="valueChanged" id="3bc-Tm-Vjo"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IrW-hM-UcC">
+                                <rect key="frame" x="88" y="248" width="198" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="Kpx-zz-Hro"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeContinously:" destination="BYZ-38-t0r" eventType="valueChanged" id="bAd-tq-QlC"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.45882353190000003" green="0.45882353190000003" blue="0.45882353190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.23790322580000001" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tut-oz-G4k" firstAttribute="top" secondItem="5f3-BD-Zay" secondAttribute="bottom" constant="8" id="0sd-OZ-HKU"/>
+                            <constraint firstItem="ix2-S9-RMh" firstAttribute="leading" secondItem="g0f-gh-IcC" secondAttribute="leading" id="32n-Rr-RHI"/>
                             <constraint firstItem="mz8-rD-7au" firstAttribute="leading" secondItem="tut-oz-G4k" secondAttribute="leading" id="6nf-z4-qQZ"/>
+                            <constraint firstItem="ix2-S9-RMh" firstAttribute="trailing" secondItem="g0f-gh-IcC" secondAttribute="trailing" id="CAt-xl-lt9"/>
                             <constraint firstItem="g0f-gh-IcC" firstAttribute="height" secondItem="5f3-BD-Zay" secondAttribute="height" id="CB4-UW-zoB"/>
+                            <constraint firstItem="8zN-PC-R6C" firstAttribute="centerX" secondItem="mz8-rD-7au" secondAttribute="centerX" id="CUN-Tj-ryd"/>
+                            <constraint firstItem="IrW-hM-UcC" firstAttribute="centerX" secondItem="8zN-PC-R6C" secondAttribute="centerX" id="EUz-v3-jO8"/>
                             <constraint firstItem="tut-oz-G4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hl1-wJ-ZuS"/>
+                            <constraint firstItem="8zN-PC-R6C" firstAttribute="top" secondItem="mz8-rD-7au" secondAttribute="bottom" constant="8" id="MCL-Sm-XaY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5f3-BD-Zay" secondAttribute="trailing" id="Wdp-oV-8gQ"/>
+                            <constraint firstItem="ix2-S9-RMh" firstAttribute="top" secondItem="IrW-hM-UcC" secondAttribute="bottom" constant="8" id="Wpc-xs-aDm"/>
+                            <constraint firstItem="IrW-hM-UcC" firstAttribute="top" secondItem="8zN-PC-R6C" secondAttribute="bottom" constant="8" id="e0l-vg-B1a"/>
                             <constraint firstItem="5f3-BD-Zay" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="e9D-H9-waE"/>
                             <constraint firstItem="g0f-gh-IcC" firstAttribute="leading" secondItem="5f3-BD-Zay" secondAttribute="leading" id="fxy-Jp-bvv"/>
                             <constraint firstItem="mz8-rD-7au" firstAttribute="top" secondItem="g0f-gh-IcC" secondAttribute="bottom" constant="8" id="gsx-le-Atk"/>
@@ -84,14 +118,17 @@
                     <connections>
                         <outlet property="btnAdditionalVC" destination="tut-oz-G4k" id="0vN-Zt-XIv"/>
                         <outlet property="counterLabel" destination="5f3-BD-Zay" id="0sg-16-1Od"/>
+                        <outlet property="segmentedControl" destination="ix2-S9-RMh" id="Nft-T4-Tu5"/>
+                        <outlet property="slider" destination="IrW-hM-UcC" id="rNL-Qu-0a6"/>
                         <outlet property="stepper" destination="mz8-rD-7au" id="ony-60-cwW"/>
                         <outlet property="stepperLabel" destination="g0f-gh-IcC" id="Lxr-03-WTY"/>
+                        <outlet property="swch" destination="8zN-PC-R6C" id="wrg-6K-fjb"/>
                         <segue destination="wnw-fC-ka2" kind="show" identifier="segueAddVC" id="faT-qa-vfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413.60000000000002" y="46.326836581709152"/>
+            <point key="canvasLocation" x="407.19999999999999" y="47.226386806596707"/>
         </scene>
         <!--ADDITIONAL ELEMENTS-->
         <scene sceneID="gOK-HL-1bw">
@@ -133,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81a-9V-vRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3002" y="41"/>
+            <point key="canvasLocation" x="2337" y="47"/>
         </scene>
         <!--Home VC-->
         <scene sceneID="fm8-eK-RpR">

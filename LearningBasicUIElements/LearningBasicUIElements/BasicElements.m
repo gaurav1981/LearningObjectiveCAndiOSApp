@@ -13,7 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *counterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stepperLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *stepper;
-
+@property (weak, nonatomic) IBOutlet UISwitch *swch;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @property (assign) int counter;
 @end
@@ -25,6 +27,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"IN %@ CLASS viewDidLoad",[self class]);
     _counter = 0;
+		//[_segmentedControl set]
+	
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -59,7 +63,35 @@
 }
 - (IBAction)incrementBy2:(id)sender {
 	_stepperLabel.text = [NSString stringWithFormat:@"%f", [_stepper value]];
-	
+}
+- (IBAction)flipState:(UISwitch *)sender {
+	if (_swch.isOn) {
+		self.view.backgroundColor = [UIColor redColor];
+	}else{
+		self.view.backgroundColor = [UIColor clearColor];
+	}
+}
+
+- (IBAction)changeContinously:(id)sender {
+	NSLog(@"Value of slider currently is %f", _slider.value);
+}
+
+- (IBAction)selectionOfColors:(id)sender {
+	switch (_segmentedControl.selectedSegmentIndex) {
+		case 0:{
+			_counterLabel.backgroundColor = _stepperLabel.backgroundColor = [UIColor redColor];
+			break;
+		}
+		case 1:
+			_counterLabel.backgroundColor = _stepperLabel.backgroundColor = [UIColor blueColor];
+			break;
+		case 2:
+			_counterLabel.backgroundColor = _stepperLabel.backgroundColor = [UIColor greenColor];
+			break;
+		default:
+			_counterLabel.backgroundColor = _stepperLabel.backgroundColor = [UIColor yellowColor];
+			break;
+	}
 }
 
 
