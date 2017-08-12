@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B89881411F3F79830030F182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B89881401F3F79830030F182 /* main.m */; };
+		B89881441F3F79830030F182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B89881431F3F79830030F182 /* AppDelegate.m */; };
+		B89881471F3F79830030F182 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89881461F3F79830030F182 /* ViewController.m */; };
+		B898814A1F3F79830030F182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89881481F3F79830030F182 /* Main.storyboard */; };
+		B898814C1F3F79830030F182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B898814B1F3F79830030F182 /* Assets.xcassets */; };
+		B898814F1F3F79830030F182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B898814D1F3F79830030F182 /* LaunchScreen.storyboard */; };
+		B898815A1F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89881591F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.m */; };
+		B89881651F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89881641F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B89881561F3F79830030F182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B89881341F3F79830030F182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B898813B1F3F79830030F182;
+			remoteInfo = MysteriesOfRemoteNotifications;
+		};
+		B89881611F3F79830030F182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B89881341F3F79830030F182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B898813B1F3F79830030F182;
+			remoteInfo = MysteriesOfRemoteNotifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B898813C1F3F79830030F182 /* MysteriesOfRemoteNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteriesOfRemoteNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89881401F3F79830030F182 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B89881421F3F79830030F182 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B89881431F3F79830030F182 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B89881451F3F79830030F182 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B89881461F3F79830030F182 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B89881491F3F79830030F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B898814B1F3F79830030F182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B898814E1F3F79830030F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B89881501F3F79830030F182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89881551F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MysteriesOfRemoteNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89881591F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteriesOfRemoteNotificationsTests.m; sourceTree = "<group>"; };
+		B898815B1F3F79830030F182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89881601F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MysteriesOfRemoteNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89881641F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteriesOfRemoteNotificationsUITests.m; sourceTree = "<group>"; };
+		B89881661F3F79830030F182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89881391F3F79830030F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89881521F3F79830030F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B898815D1F3F79830030F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B89881331F3F79830030F182 = {
+			isa = PBXGroup;
+			children = (
+				B898813E1F3F79830030F182 /* MysteriesOfRemoteNotifications */,
+				B89881581F3F79830030F182 /* MysteriesOfRemoteNotificationsTests */,
+				B89881631F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests */,
+				B898813D1F3F79830030F182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B898813D1F3F79830030F182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B898813C1F3F79830030F182 /* MysteriesOfRemoteNotifications.app */,
+				B89881551F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.xctest */,
+				B89881601F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B898813E1F3F79830030F182 /* MysteriesOfRemoteNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				B89881421F3F79830030F182 /* AppDelegate.h */,
+				B89881431F3F79830030F182 /* AppDelegate.m */,
+				B89881451F3F79830030F182 /* ViewController.h */,
+				B89881461F3F79830030F182 /* ViewController.m */,
+				B89881481F3F79830030F182 /* Main.storyboard */,
+				B898814B1F3F79830030F182 /* Assets.xcassets */,
+				B898814D1F3F79830030F182 /* LaunchScreen.storyboard */,
+				B89881501F3F79830030F182 /* Info.plist */,
+				B898813F1F3F79830030F182 /* Supporting Files */,
+			);
+			path = MysteriesOfRemoteNotifications;
+			sourceTree = "<group>";
+		};
+		B898813F1F3F79830030F182 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89881401F3F79830030F182 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B89881581F3F79830030F182 /* MysteriesOfRemoteNotificationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B89881591F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.m */,
+				B898815B1F3F79830030F182 /* Info.plist */,
+			);
+			path = MysteriesOfRemoteNotificationsTests;
+			sourceTree = "<group>";
+		};
+		B89881631F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B89881641F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.m */,
+				B89881661F3F79830030F182 /* Info.plist */,
+			);
+			path = MysteriesOfRemoteNotificationsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B898813B1F3F79830030F182 /* MysteriesOfRemoteNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89881691F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotifications" */;
+			buildPhases = (
+				B89881381F3F79830030F182 /* Sources */,
+				B89881391F3F79830030F182 /* Frameworks */,
+				B898813A1F3F79830030F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MysteriesOfRemoteNotifications;
+			productName = MysteriesOfRemoteNotifications;
+			productReference = B898813C1F3F79830030F182 /* MysteriesOfRemoteNotifications.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B89881541F3F79830030F182 /* MysteriesOfRemoteNotificationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B898816C1F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotificationsTests" */;
+			buildPhases = (
+				B89881511F3F79830030F182 /* Sources */,
+				B89881521F3F79830030F182 /* Frameworks */,
+				B89881531F3F79830030F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B89881571F3F79830030F182 /* PBXTargetDependency */,
+			);
+			name = MysteriesOfRemoteNotificationsTests;
+			productName = MysteriesOfRemoteNotificationsTests;
+			productReference = B89881551F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B898815F1F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B898816F1F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotificationsUITests" */;
+			buildPhases = (
+				B898815C1F3F79830030F182 /* Sources */,
+				B898815D1F3F79830030F182 /* Frameworks */,
+				B898815E1F3F79830030F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B89881621F3F79830030F182 /* PBXTargetDependency */,
+			);
+			name = MysteriesOfRemoteNotificationsUITests;
+			productName = MysteriesOfRemoteNotificationsUITests;
+			productReference = B89881601F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89881341F3F79830030F182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mobility Quarks";
+				TargetAttributes = {
+					B898813B1F3F79830030F182 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 97PM9HXX5C;
+						ProvisioningStyle = Automatic;
+					};
+					B89881541F3F79830030F182 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 97PM9HXX5C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B898813B1F3F79830030F182;
+					};
+					B898815F1F3F79830030F182 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 97PM9HXX5C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B898813B1F3F79830030F182;
+					};
+				};
+			};
+			buildConfigurationList = B89881371F3F79830030F182 /* Build configuration list for PBXProject "MysteriesOfRemoteNotifications" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B89881331F3F79830030F182;
+			productRefGroup = B898813D1F3F79830030F182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B898813B1F3F79830030F182 /* MysteriesOfRemoteNotifications */,
+				B89881541F3F79830030F182 /* MysteriesOfRemoteNotificationsTests */,
+				B898815F1F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B898813A1F3F79830030F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B898814F1F3F79830030F182 /* LaunchScreen.storyboard in Resources */,
+				B898814C1F3F79830030F182 /* Assets.xcassets in Resources */,
+				B898814A1F3F79830030F182 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89881531F3F79830030F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B898815E1F3F79830030F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B89881381F3F79830030F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89881471F3F79830030F182 /* ViewController.m in Sources */,
+				B89881441F3F79830030F182 /* AppDelegate.m in Sources */,
+				B89881411F3F79830030F182 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89881511F3F79830030F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B898815A1F3F79830030F182 /* MysteriesOfRemoteNotificationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B898815C1F3F79830030F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89881651F3F79830030F182 /* MysteriesOfRemoteNotificationsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B89881571F3F79830030F182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B898813B1F3F79830030F182 /* MysteriesOfRemoteNotifications */;
+			targetProxy = B89881561F3F79830030F182 /* PBXContainerItemProxy */;
+		};
+		B89881621F3F79830030F182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B898813B1F3F79830030F182 /* MysteriesOfRemoteNotifications */;
+			targetProxy = B89881611F3F79830030F182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B89881481F3F79830030F182 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89881491F3F79830030F182 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B898814D1F3F79830030F182 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B898814E1F3F79830030F182 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B89881671F3F79830030F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B89881681F3F79830030F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B898816A1F3F79830030F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B898816B1F3F79830030F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B898816D1F3F79830030F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotificationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MysteriesOfRemoteNotifications.app/MysteriesOfRemoteNotifications";
+			};
+			name = Debug;
+		};
+		B898816E1F3F79830030F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotificationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MysteriesOfRemoteNotifications.app/MysteriesOfRemoteNotifications";
+			};
+			name = Release;
+		};
+		B89881701F3F79830030F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotificationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotificationsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MysteriesOfRemoteNotifications;
+			};
+			name = Debug;
+		};
+		B89881711F3F79830030F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 97PM9HXX5C;
+				INFOPLIST_FILE = MysteriesOfRemoteNotificationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilityquarks.MysteriesOfRemoteNotificationsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MysteriesOfRemoteNotifications;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B89881371F3F79830030F182 /* Build configuration list for PBXProject "MysteriesOfRemoteNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89881671F3F79830030F182 /* Debug */,
+				B89881681F3F79830030F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B89881691F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B898816A1F3F79830030F182 /* Debug */,
+				B898816B1F3F79830030F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B898816C1F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotificationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B898816D1F3F79830030F182 /* Debug */,
+				B898816E1F3F79830030F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B898816F1F3F79830030F182 /* Build configuration list for PBXNativeTarget "MysteriesOfRemoteNotificationsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89881701F3F79830030F182 /* Debug */,
+				B89881711F3F79830030F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B89881341F3F79830030F182 /* Project object */;
+}
